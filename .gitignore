@@ -1,0 +1,15 @@
+# Local scratch / generated artifacts
+*.log
+*.tmp
+node_modules/
+.venv/
+dist/
+build/
+.coverage
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+.DS_Store

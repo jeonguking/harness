@@ -1,0 +1,16 @@
+name: harness
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs:
+    name: 문서 하네스 검증
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 하네스 전체 검증
+        run: bash scripts/check.sh
+      - name: doc-gardening (스테일 보고)
+        run: bash scripts/doc-gardening.sh
